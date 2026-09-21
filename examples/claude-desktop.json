@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sumoffice": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "-v", "/absolute/path/to/your/files:/work", "hissih/sumoffice-mcp"]
+    }
+  }
+}

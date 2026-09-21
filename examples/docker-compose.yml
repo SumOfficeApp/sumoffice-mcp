@@ -1,0 +1,7 @@
+# The local MCP server as a compose service. Start with: docker compose run --rm sumoffice-mcp
+services:
+  sumoffice-mcp:
+    image: hissih/sumoffice-mcp:latest
+    stdin_open: true
+    volumes:
+      - ./files:/work

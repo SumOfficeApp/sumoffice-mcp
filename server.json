@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.sumoffice/office",
+  "title": "SumOffice — real Word and Excel for agents",
+  "description": "Real Word and Excel for agents: open your .docx/.xlsm, read, propose, apply, get it back intact.",
+  "websiteUrl": "https://sumoffice.com/mcp",
+  "version": "0.3.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://view.sumoffice.com/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/hissih/sumoffice-mcp:0.3.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "runtimeHint": "docker",
+      "runtimeArguments": [
+        {
+          "type": "named",
+          "name": "-v",
+          "value": "{files_dir}:/work",
+          "description": "Folder with your documents, mounted at /work",
+          "isRequired": true,
+          "variables": {
+            "files_dir": {
+              "description": "Absolute path to the folder with the files the agent may open",
+              "isRequired": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/SumOfficeApp/sumoffice-mcp",
+    "source": "github"
+  }
+}
