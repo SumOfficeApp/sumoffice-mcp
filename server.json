@@ -4,7 +4,7 @@
   "title": "SumOffice — real Word and Excel for agents",
   "description": "Real Word and Excel for agents: open your .docx/.xlsm, read, propose, apply, get it back intact.",
   "websiteUrl": "https://sumoffice.com/mcp",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "remotes": [
     {
       "type": "streamable-http",
@@ -14,7 +14,7 @@
   "packages": [
     {
       "registryType": "oci",
-      "identifier": "docker.io/hissih/sumoffice-mcp:0.3.0",
+      "identifier": "docker.io/hissih/sumoffice-mcp:0.3.1",
       "transport": {
         "type": "stdio"
       },
