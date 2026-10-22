@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sumoffice",
+  "version": "0.3.1",
+  "description": "Real Word and Excel for agents: open .docx/.xlsx/.xlsm, read, propose, apply, get the file back intact.",
+  "author": { "name": "SumOffice", "email": "hello@sumoffice.com", "url": "https://sumoffice.com" },
+  "homepage": "https://sumoffice.com/mcp",
+  "repository": "https://github.com/SumOfficeApp/sumoffice-mcp",
+  "license": "MIT",
+  "keywords": ["word", "excel", "docx", "xlsx", "xlsm", "vba", "power-query", "office", "mcp"]
+}
